@@ -2,15 +2,22 @@
 
 一个本地部署、界面简洁美观、目录清晰、有点击反馈的论文阅读笔记网站。自动从 `paper-notes/notes` 目录加载 Markdown（.md）笔记并以精致样式呈现。
 
+[在线演示](https://ycx2004.github.io/paper-notes-reader/)
+
 ## 一、本地运行
 
-1. 将本项目保持当前目录结构：
+1. 克隆仓库：
+   ```bash
+   git clone https://github.com/ycx2004/paper-notes-reader.git
+   cd paper-notes-reader
+   ```
+2. 将本项目保持当前目录结构：
    - index.html
    - styles.css
    - script.js
    - paper-notes/notes/*.md
-2. 用浏览器直接双击打开 `index.html` 即可浏览（建议使用 Chrome/Edge）。
-3. 如果浏览器因本地安全策略限制无法加载本地 Markdown（较少见），可以使用一个本地静态服务器：
+3. 用浏览器直接双击打开 `index.html` 即可浏览（建议使用 Chrome/Edge）。
+4. 如果浏览器因本地安全策略限制无法加载本地 Markdown（较少见），可以使用一个本地静态服务器：
    - Windows PowerShell 执行：
      ```powershell
      # 方法1：Python3
@@ -63,3 +70,7 @@
 - 使用 `styles.css` 控制配色与布局，已适配暗色主题并包含响应式样式。
 - 如需自定义分类规则，可修改 `script.js` 中的 `categorize()` 函数。
 - 如需调整统计或元信息规则，可修改 `parseFrontMatter()`。
+
+## 六、许可证
+
+本项目采用 [MIT 许可证](LICENSE)。
